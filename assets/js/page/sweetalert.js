@@ -22,7 +22,7 @@ $("#swal-5").click(function () {
 
 $("#swal-6").click(function () {
   swal({
-    title: 'Are you sure?',
+    title: 'Do you want to delete this?',
     text: 'Once deleted, you will not be able to recover this imaginary file!',
     icon: 'warning',
     buttons: true,

@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Request Goods / Services</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/bundles/pretty-checkbox/pretty-checkbox.min.css">
+  <link rel="stylesheet" href="assets/bundles/dropzonejs/dropzone.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom3.css">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i data-feather="maximize"></i>
+              </a></li>
+            <li>
+              <form class="form-inline mr-auto">
+                <div class="search-element">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
+                  <button class="btn" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
+              <span class="badge headerBadge1">
+                6 </span> </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Messages
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
+											text-white"> <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
+                      Deo</span>
+                    <span class="time messege-text">Please check your mail !!</span>
+                    <span class="time">2 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Request for leave
+                      application</span>
+                    <span class="time">5 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
+                      Ryan</span> <span class="time messege-text">Your payment invoice is
+                      generated.</span> <span class="time">12 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
+                      Smith</span> <span class="time messege-text">hii John, I have upload
+                      doc
+                      related to task.</span> <span class="time">30
+                      Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
+                      Joshi</span> <span class="time messege-text">Please do as specify.
+                      Let me
+                      know if you have any query.</span> <span class="time">1
+                      Days Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Client Requirements</span>
+                    <span class="time">2 Days Ago</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Notifications
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread"> <span
+                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
+												fa-code"></i>
+                  </span> <span class="dropdown-item-desc"> Template update is
+                    available now! <span class="time">2 Min
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
+												fa-user"></i>
+                  </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
+                      Sugiharto</b> are now friends <span class="time">10 Hours
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
+                      class="fas
+												fa-check"></i>
+                  </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
+                    moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
+                      Hours
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
+                      class="fas fa-exclamation-triangle"></i>
+                  </span> <span class="dropdown-item-desc"> Low disk space. Let's
+                    clean it! <span class="time">17 Hours Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
+												fa-bell"></i>
+                  </span> <span class="dropdown-item-desc"> Welcome to Otika
+                    template! <span class="time">Yesterday</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello Sarah Smith</div>
+              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+              </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                Activities
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index2.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
+                class="logo-name">Otika</span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Main</li>
+            <li class="dropdown">
+              <a href="index2.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content" id="main-content">
+        <section class="section">
+          <table class="tittle-request">
+            <tr>
+              <th rowspan="2"><img src="assets/img/inbox.png" alt="" height="43" width="40"></th>
+              <th style="font-size: 18px; font-weight: bolder;">Request Goods /Services</th>
+            </tr>
+            <tr>
+              <td style="color: #8A8A8A; padding-top: 0%;" class="caption-title-table">Submit a Request for Goods or
+                Services According
+                to Your Needs!</td>
+            </tr>
+          </table>
+          <div class="container-fluid">
+            <div class="card mb-0" id="card-form">
+              <div class="card-body" style="padding: 10px 15px;">
+                <div class="row left-row">
+                  <p style="font-size: 16px;">User & Item Details</p>
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-md-8 col-6">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Employee</div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fa-user" required>
+                            <option>Enter Employee Name...</option>
+                            <option>Yasmina Arethaya</option>
+                            <option>Riri</option>
+                            <option>Budi Santoso</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Request Type</div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-align-left">
+                            <option selected>Enter Request Type...</option>
+                            <option>Pengadaan Baru</option>
+                            <option>Penggantian</option>
+                            <option>Perbaikan</option>
+                            <option>Penambahan</option>
+                            <option>Penghapusan</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- <hr style="margin-top: -15px; padding-bottom: 0px;"> -->
+                    <div class="row">
+                      <div class="col-md-4 col-6">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Goods/Services</div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-toolbox">
+                            <option selected>Enter Goods/Service...</option>
+                            <option>Equipment</option>
+                            <option>Office Supplies</option>
+                            <option>Furniture</option>
+                            <option>IT Services</option>
+                            <option>Maintenance</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-6">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Request</div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-file-signature">
+                            <option selected>Enter Request...</option>
+                            <option>Material Handling</option>
+                            <option>Office Supplies</option>
+                            <option>IT Equipment</option>
+                            <option>Furniture</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-12">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Sub Peripheral</div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-bullseye">
+                            <option selected>Choose Sub Peripheral...</option>
+                            <option>Sub Peripheral 1</option>
+                            <option>Sub Peripheral 2</option>
+                            <option>Sub Peripheral 3</option>
+                            <option>Sub Peripheral 4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-7 col-12">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Item Request
+                        </div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-align-left">
+                            <option selected>Enter Item Request...</option>
+                            <option>Item 1</option>
+                            <option>Item 2</option>
+                            <option>Item 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-6">
+                        <!-- Label -->
+                        <div class="section-title field-title required" style="margin-top: -15px;">Qty</div>
+
+                        <!-- Input group -->
+                        <div class="input-group" style="margin-top: -5px;">
+                          <!-- Icon (prepend) -->
+                          <div class="input-group-prepend">
+                            <div class="input-group-text bg-white border-right-0">
+                              <i class="fa fa-sort-amount-up" style="color: #6e6e6e;"></i>
+                            </div>
+                          </div>
+
+                          <!-- Input -->
+                          <input type="number" class="form-control border-left-0" min="1" placeholder="Enter qty..."
+                            style="color: #6e6e6e; padding-left: 0%;">
+
+                          <!-- UNIT label (append) -->
+                          <div class="input-group-append">
+                            <div class="input-group-text bg-white" style="color:#8A8A8A;">
+                              UNIT
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-2 col-6">
+                        <div class="section-title field-title" style="margin-top: -15px;">Consummable</div>
+                        <div class="checkbox-wrapper">
+                          <input type="checkbox" id="consumable" name="checkbox" value="Bike">
+                          <label for="consumable" style="margin-top: 10px;">Yes</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-6">
+                        <div class="section-title field-title required mt-lg-n2" style="margin-top: 10px;">Estimation
+                          Price
+                        </div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fa-solid fa-rupiah-sign">
+                            <option selected>Enter Estimation Price...</option>
+                            <option>Item 1</option>
+                            <option>Item 2</option>
+                            <option>Item 3</option>
+                          </select>
+                        </div>
+                        <div class="form-text" id="basic-addon4"
+                          style="font-size: 10px; color: red; margin-top: -25px;">
+                          Last Purchase
+                          Date: </div>
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div class="section-title field-title required mt-lg-n2" style="margin-top: 10px;">Suplier
+                        </div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-people-carry">
+                            <option selected>Enter Suplier...</option>
+                            <option>Item 1</option>
+                            <option>Item 2</option>
+                            <option>Item 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 support border-lg-left border-lg-top">
+                    <div class="row">
+                      <p class="support" style="font-size: 16px;">Supporting Info</p>
+                      <div class="col-md-12 col-6">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Reason Request</div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-align-left" required>
+                            <option>Input Reason Request...</option>
+                            <option>Yasmina Arethaya</option>
+                            <option>Riri</option>
+                            <option>Budi Santoso</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-6">
+                        <div class="section-title field-title required" style="margin-top: -15px;">Frequently Request
+                        </div>
+                        <div class="form-group" style="margin-top: -5px;">
+                          <select class="form-control select2-with-icon" data-icon="fas fa-align-left" required>
+                            <option>Input Frequently Request...</option>
+                            <option>Yasmina Arethaya</option>
+                            <option>Riri</option>
+                            <option>Budi Santoso</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="drop-file" style="margin-top: -45px;">
+                      <label class="section-title field-title required">Upload
+                        Document</label>
+                      <div data-filename="" class="input-file">
+                        <input id="file" type="file" multiple>
+                        <label for="file">
+                          <div>
+                            <i class="fa-regular fas fa-file-upload"
+                              style="color: #8A8A8A; font-size: 25px; margin-top: 20px;"></i>
+                            <p style="font-size: 12px; color: #8A8A8A; font-weight: normal;">Drag and drop here or
+                              click
+                              <span style="color: #2563EB;">to upload</span>
+                            </p>
+                            <p style="font-size: 10px; color: #8A8A8A; font-weight: normal; margin-top: -30px;">
+                              Max
+                              size: 5 MB</p>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- Optional error message placeholder -->
+                    <div id="file-error" style="color: red; font-size: 14px; margin-top: 8px;"></div>
+                  </div>
+                </div>
+                <div class="button-submit">
+                  <button type="submit" class="btn btn-secondary w-100"
+                    style="margin-top: 5px; background-color: #024075; border-radius: 8px; height: 34px; font-size: 12px;"><span><i
+                        class="fas fa-plus" style="color: #fff; font-size: 12px;"></i></span> Submit
+                    Request</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card-form">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-9 order-0" style="padding: 0px; margin-top: -10px;">
+                    <p class="mb-0" style="font-size: 18px; font-weight: bolder;">List Request Item</p>
+                    <p class="mb-0 caption-title-table" style="color: #8A8A8A; font-weight: normal; margin-top: -5px;">
+                      Overview of
+                      Submitted Goods & Services
+                      Requests</p>
+                  </div>
+                  <div class="search-container col-12 col-lg-3 order-1 order-lg-0 mt-2 mt-lg-0">
+                    <input type="text" id="customSearch" placeholder="Type to search" class="search-input">
+                    <div class="search-divider"></div>
+                    <i class="search-icon fas fa-search"></i>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-top: -5px;">
+                  <table id="customTable" class="table-custom" cellspacing="0" style="width: 100%;">
+                    <thead>
+                      <tr>
+                        <th style="width: 180px;" data-orderable="false">Action</th>
+                        <th>Request</th>
+                        <th>Purcode</th>
+                        <th>Items</th>
+                        <th>Qty</th>
+                        <th>Reason</th>
+                        <th>End User</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>Yasmina Arethaya Hanjani</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex gap-1 flex-nowrap">
+                            <button class="btn-edit btn-sm" data-toggle="modal" data-target="#basicModal"><i
+                                class="fas fa-pencil-alt"></i> Edit</button>
+                            <button class="btn-delete btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                            <button class="btn-detail"><i class="fas fa-caret-up"></i> Detail</button>
+                          </div>
+                          <div class="detail-data" style="display:none;">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th>Request Type</th>
+                                  <th>Goods/Services</th>
+                                  <th>Sub Peripheral</th>
+                                  <th>Consummable</th>
+                                  <th>Estimation Price</th>
+                                  <th>Supplier</th>
+                                  <th>Frequently Request</th>
+                                  <th>Upload Document</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Pengadaan Baru</td>
+                                  <td>General (Stationery)</td>
+                                  <td>Sub Peripheral 1</td>
+                                  <td>Yes</td>
+                                  <td>Rp. 100.000</td>
+                                  <td>PT Navigation</td>
+                                  <td>Stationery ATK</td>
+                                  <td><a href="#">Document.pdf</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                        <td>Tes General (Stationery)</td>
+                        <td>U010678</td>
+                        <td>Isi pulpen gel isi 20 pcs</td>
+                        <td>1</td>
+                        <td>Habis</td>
+                        <td>A Faldy Indra Saputra</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edit -->
+
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 60%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Data Request Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="row mt-1">
+              <div class="col-8">
+                <label>Request</label>
+                <input type="text" class="form-control" placeholder="Enter Request...">
+              </div>
+              <div class="col-4">
+                <label>Purcode</label>
+                <input type="text" class="form-control" placeholder="Enter Purcode...">
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col">
+                <label>Items</label>
+                <input type="text" class="form-control" placeholder="Enter Items...">
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-3">
+                <label>Qty</label>
+                <input type="number" class="form-control" min="1" placeholder="Enter Qty...">
+              </div>
+              <div class="col-9">
+                <label>Reason</label>
+                <input type="text" class="form-control" placeholder="Enter Reason...">
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col">
+                <label>End User</label>
+                <select class="form-control select2-with-icon" data-icon="fa-user">
+                  <option selected>Enter End User...</option>
+                  <option>Yasmina Arethaya</option>
+                  <option>Riri</option>
+                  <option>Budi Santoso</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-whitesmoke br">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/multiple-upload.js"></script>
+  <script src="assets/js/page/sweetalert.js"></script>
+
+  <script src="assets/js/page/datatables.js"></script>
+
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- JS Libraries -->
+  <script src="assets/bundles/dropzonejs/min/dropzone.min.js"></script>
+  <script src="assets/bundles/cleave-js/dist/cleave.min.js"></script>
+  <script src="assets/bundles/cleave-js/dist/addons/cleave-phone.us.js"></script>
+  <script src="assets/bundles/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+  <script src="assets/bundles/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
+  <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script src="assets/bundles/datatables/datatables.min.js"></script>
+  <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+
+  <script src="assets/bundles/sweetalert/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Calling main content -->
+  <script src="router.js"></script>
+  <!-- File JSchart  -->
+  <script src="inventory_chart.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    // JS untuk menghitung karakter textarea
+    $(document).ready(function () {
+      $('.the-textarea').on('keyup', function () {
+        var characterCount = $(this).val().length;
+        var wrapper = $(this).closest('.ta-wrapper');
+        wrapper.find('.current').text(characterCount);
+      });
+    });
+
+    // JS untuk icon select2
+    $(document).ready(function () {
+      $('.select2-with-icon').each(function () {
+        const $this = $(this);
+        const placeholder = $this.find('option[selected]').text() || 'Select an option';
+        const iconClass = $this.data('icon') || 'fa-circle';
+
+        $this.select2({
+          width: '100%',
+          placeholder: placeholder,
+          escapeMarkup: function (m) { return m; },
+          templateSelection: function (data) {
+            // Tampilkan icon hanya saat placeholder dipilih
+            return `<span><i class="fa ${iconClass}" style="margin-right: 8px;"></i>${data.text}</span>`;
+
+          },
+          templateResult: function (data) {
+            return data.text;
+          },
+          escapeMarkup: function (markup) {
+            return markup;
+          }
+        });
+      });
+    });
+
+    // JS untuk ukuran maks upload file
+    document.getElementById("file").addEventListener("change", function (event) {
+      const maxSize = 5 * 1024 * 1024; // 5 MB
+      const files = event.target.files;
+      let errorMessage = "";
+
+      for (let i = 0; i < files.length; i++) {
+        if (files[i].size > maxSize) {
+          errorMessage = `File "${files[i].name}" exceeds the 5 MB limit.`;
+          event.target.value = ""; // Reset the input
+          break;
+        }
+      }
+
+      document.getElementById("file-error").textContent = errorMessage;
+    });
+
+
+    // JS untuk drag and drop file upload
+    var $dragArea = $(".input-file");
+
+    $(function () {
+      $dragArea.on("dragenter", function () {
+        $(this).addClass("event-dragenter");
+      });
+      $dragArea.on("dragleave", function () {
+        $(this).removeClass("event-dragenter");
+      });
+      $dragArea.find("input[type='file']").on("change", function (e) {
+        $dragArea.removeClass("event-dragenter");
+
+        var $fileName = e.target.files[0].name;
+        console.log($fileName);
+        $dragArea.addClass("event-drop");
+        $dragArea.attr("data-filename", $fileName);
+        setTimeout(uploadedCallBack, 500);
+      });
+    });
+
+    function uploadedCallBack() {
+      alert('Uploaded callback');
+    }
+
+    // JS untuk DataTable
+    $(document).ready(function () {
+      // Inisialisasi DataTables
+      var table = $('#customTable').DataTable({
+        paging: false,             // tanpa pagination
+        scrollY: '154px',           // tinggi scroll
+        scrollX: true,            // horizontal scroll
+        scrollCollapse: true,
+        lengthChange: false,
+        searching: true,
+        info: false,
+        dom: 'lrtip',
+        columnDefs: [
+          { orderable: false, targets: 0 } // kolom action tidak bisa sort
+        ]
+      });
+
+      table.columns.adjust(); // supaya lebar kolom sinkron
+
+      // Search custom
+      $('#customSearch').on('keyup', function () {
+        table.search(this.value).draw();
+      });
+
+      $('#customTable tbody').on('click', '.btn-detail', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row(tr);
+        var icon = $(this).find('i'); // ambil elemen <i> di dalam tombol
+
+        if (row.child.isShown()) {
+          // Tutup detail
+          row.child.hide();
+          tr.removeClass('shown');
+
+          // Ganti icon ke arrow-down
+          icon.removeClass('fa-caret-down').addClass('fa-caret-up');
+        } else {
+          // Ambil isi detail dari div tersembunyi di kolom pertama
+          var detailContent = tr.find('.detail-data').html();
+          row.child(`
+      <div style="padding:10px; background:#f9f9f9; font-size:12px;">
+        ${detailContent}
+      </div>
+    `).show();
+          tr.addClass('shown');
+
+          // Ganti icon ke arrow-up
+          icon.removeClass('fa-caret-up').addClass('fa-caret-down');
+        }
+      });
+
+    });
+
+    $(document).on('click', '.btn-delete', function () {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: 'This action cannot be undone!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          console.log('Delete item:', $(this).closest('tr').find('td').eq(1).text());
+        }
+      });
+    });
+
+    // Event delegation untuk tombol delete
+    $(document).on('click', '.btn-delete', function () {
+      let row = $(this).closest('tr');
+      let itemName = row.find('td').eq(2).text();
+
+      Swal.fire({
+        title: 'Are you sure?',
+        text: 'You are about to delete "' + itemName + '"',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Contoh hapus baris di tabel (UI)
+          row.fadeOut(500, function () {
+            $(this).remove();
+          });
+
+          Swal.fire(
+            'Deleted!',
+            '"' + itemName + '" has been deleted.',
+            'success'
+          );
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Icon Toggle</title>
+</head>
+<style>
+    .icon-container {
+        width: 50px;
+        /* Sesuaikan ukuran */
+        height: 50px;
+        /* Sesuaikan ukuran */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myIcon {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+        /* Animasi perubahan */
+    }
+
+    /* Gaya untuk ikon yang dirotasi */
+    .rotated {
+        transform: rotate(180deg);
+    }
+</style>
+
+<body>
+    <div class="icon-container">
+        <i id="myIcon" class="far fa-trash-alt" onclick="toggleIcon()"></i>
+    </div>
+    <script>
+        function toggleIcon() {
+            const icon = document.getElementById("myIcon");
+            icon.classList.toggle("rotated");
+
+            // Ganti gambar ikon berdasarkan kelas "rotated"
+            if (icon.classList.contains("rotated")) {
+                icon.src = "icon_down.png";
+            } else {
+                icon.src = "icon_up.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

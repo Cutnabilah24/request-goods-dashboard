@@ -364,3 +364,52 @@ textarea {
 .select2-dropdown {
   z-index: 9999 !important;
 }
+
+@media (max-width: 768px) {
+  .drop-file p {
+    font-size: 14px;
+  }
+  .drop-file i {
+    font-size: 24px;
+  }
+
+  .the-count {
+    margin-right: 0;
+  }
+
+  .caption-title-table {
+    font-size: 14px;
+  }
+
+  .btn-delete,
+  .btn-edit {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .border-lg-top {
+    border-top: 1px solid #c7c7cc;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 990px) {
+  .border-lg-left {
+    border-left: 1px solid #c7c7cc;
+  }
+
+  .the-count {
+    position: absolute;
+    right: 70px;
+    margin-top: -35px;
+  }
+}
+
+.input-file label {
+  display: block;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  cursor: pointer;
+}
